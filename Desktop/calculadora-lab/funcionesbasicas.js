@@ -1,32 +1,30 @@
+// FASE 2 – cambio de strings a numero
 
-// Función para sumar dos números
 function sumar(a, b) {
-    return a + b;
+    return parseFloat(a) + parseFloat(b);
 }
-// Función para restar dos números
+
 function restar(a, b) {
-    return a - b;
+    return parseFloat(a) - parseFloat(b);
 }
-// Función para multiplicar dos números
+
 function multiplicar(a, b) {
-    return a * b;
+    return parseFloat(a) * parseFloat(b);
 }
-// Función para dividir dos números
+
 function dividir(a, b) {
-    return a / b;
-} 
+    return parseFloat(a) / parseFloat(b);
+}
 
+// variables
+let numero1 = "10";
+let numero2 = "20";
 
-// variable "resultado" con la funciones sumar, restar, multiplicar y dividir
-let resultado=sumar(5, 3);
-console.log("La suma es: " + resultado);
+console.log("La suma es de :", sumar(numero1, numero2)); 
 
-resultado=restar(10, 4);
-console.log("La resta es: " + resultado);
+console.log("La resta es de:", restar(numero1, numero2)); 
 
-resultado=multiplicar(6, 7);
-console.log("La multiplicación es: " + resultado);
+console.log("La multiplicacion es de:", multiplicar(numero1, numero2));
 
-resultado=dividir(20, 5);
-console.log("La división es: " + resultado);
+console.log("la division es de:", dividir(numero1, numero2));
 
